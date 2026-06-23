@@ -5,26 +5,26 @@
 class HolocronLsp < Formula
   desc "LSP server for Holocron — live in-editor diagnostics for .holocron.yaml"
   homepage "https://github.com/holocron-lang/holocron-lsp"
-  version "0.1.1"
+  version "0.2.0"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/holocron-lang/holocron-lsp/releases/download/v#{version}/holocron-lsp-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "9f8103234ad5ab5fbd33a01fdd41e1b5b38d37af5e51bd6b0305d1bb116e6e61"
+      sha256 "37438e20c110c07a1fd7f28ba70248612f03c5efd6d92847a876c4eaf9a334c2"
     else
       url "https://github.com/holocron-lang/holocron-lsp/releases/download/v#{version}/holocron-lsp-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b6ccfa40a92a327a817cd5b7dcad9da74a128f1d19c3e8118608d35d76082ddb"
+      sha256 "213b0fb43edaf58242d18bbe79129c84a48338cc0e19091eb274890da5dc317a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/holocron-lang/holocron-lsp/releases/download/v#{version}/holocron-lsp-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7d8db201e1c79959a014353ecf62e0fe4de0f35ffeab65d11bbd0461623467b8"
+      sha256 "64d7fb0f5dbf0aedc9999cab12c971b452a4d10d8b84f9b4cc106df9e9393c95"
     else
       url "https://github.com/holocron-lang/holocron-lsp/releases/download/v#{version}/holocron-lsp-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4ff32d8d557a2b255862daef8a226e10f1125318a509017bbe87f22b1e886fb7"
+      sha256 "fd1c3e41d5f439853d311a8fdefecd2b9c06a402de49573662c004b22bf8d2db"
     end
   end
 
