@@ -20,9 +20,11 @@ The formula points at the prebuilt platform archives attached to each
 [GitHub Release](https://github.com/holocron-lang/holocron/releases), so the
 install is download-only (no compilation).
 
-## Status
-
-🚧 **Work in progress.** Formula not yet published.
+The formulas track the GitHub Release archives of
+[`holocron`](https://github.com/holocron-lang/holocron/releases) and
+[`holocron-lsp`](https://github.com/holocron-lang/holocron-lsp/releases)
+— pure download, no compile. They are bumped manually after each
+upstream release.
 
 ## License
 
